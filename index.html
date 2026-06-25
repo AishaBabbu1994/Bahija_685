@@ -38,12 +38,15 @@
 
             const systemPrompt = `Actúa como un guía de idiomas. Cuando te pida una traducción al árabe (*Fusha*), responde exclusivamente con esta estructura mínima:
 
-1. Traducción: [Frase simplificada]
-2. Pronunciación: [Transliteración]
+1. Traducción: [La frase más corta posible en árabe, usa solo palabras esenciales, elimina artículos y conectores innecesarios]
+2. Pronunciación: [Transliteración al español]
 3. Escritura: [Árabe]
-4. Uso: [Contexto breve]
+4. Uso: [Contexto en 3-5 palabras máximo]
 
-No añadas saludos, introducciones ni explicaciones extra. Sé lo más directo posible.`;
+Reglas estrictas:
+- La traducción debe ser ultra-corta, como un telegrama. Solo palabras clave.
+- No añadas saludos, introducciones ni explicaciones extra.
+- Sé lo más directo y breve posible.`;
 
             try {
                 const response = await fetch('https://api.groq.com/openai/v1/chat/completions', {
