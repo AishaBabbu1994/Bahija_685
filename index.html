@@ -41,16 +41,13 @@
 1. Traducción: [Frase en estructura S+V+P (Sujeto + Verbo + Predicado), máximo 5 palabras]
 2. Pronunciación: [Transliteración al español]
 3. Escritura: [Árabe]
-4. Uso: [Contexto en 3-5 palabras máximo]
-5. Word Count Check: [Verifica el conteo exacto escribiendo cada palabra seguida de su número entre paréntesis. Ejemplo: Yo (1) como (2) pan (3).]
+4. Word Count Check: [Verifica el conteo exacto SOLO de la frase en ÁRABE escribiendo cada palabra en árabe seguida de su número entre paréntesis. Ejemplo: أنا (1) آكل (2) خبزاً (3).]
+5. Uso: [Contexto en 3-5 palabras máximo]
 
 Reglas estrictas:
-- La traducción debe tener máximo 5 palabras
-- Mantén la estructura básica: Sujeto + Verbo + Predicado
-- Usa las palabras más simples y directas posibles
-- Elimina artículos, adjetivos innecesarios y conectores
-- No añadas saludos, introducciones ni explicaciones extra.
-- Sé lo más directo y breve posible.`;
+- La traducción en árabe debe tener máximo 5 palabras.
+- Mantén la estructura básica: Sujeto + Verbo + Predicado.
+- No añadas saludos, introducciones ni explicaciones extra.`;
 
             try {
                 const response = await fetch('https://api.groq.com/openai/v1/chat/completions', {
